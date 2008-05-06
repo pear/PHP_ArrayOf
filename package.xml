@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+http://pear.php.net/dtd/tasks-1.0.xsd
+http://pear.php.net/dtd/package-2.0
+http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PHP_ArrayOf</name>
+ <channel>pear.php.net</channel>
+ <summary>Abstract class package to create arrays of specific element types</summary>
+ <description>Allows to create classes similar to ArrayObject with additional element type or index constraints.
+ </description>
+ <lead>
+  <name>Philippe Jausions</name>
+  <user>jausions</user>
+  <email>jausions@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-05-06</date>
+ <time>13:08:01</time>
+ <version>
+  <release>0.2.1</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>
+- First release as PEAR package
+ </notes>
+ <contents>
+  <dir name="/">
+   <dir name="PHP">
+    <file name="ArrayOf.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info"/>
+    </file>
+    <file name="ArrayOfInterface.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info"/>
+    </file>
+    <dir name="ArrayOf">
+     <file name="Exception.php" role="php">
+      <tasks:replace from="@package_version@" to="version" type="package-info"/>
+     </file>
+    </dir> <!-- /PHP/ArrayOf -->
+   </dir> <!-- /PHP -->
+   <dir name="docs">
+    <file name="license.txt" role="doc" />
+    <dir name="examples">
+     <file name="example1.php" role="doc" />
+    </dir> <!-- /PHP/ArrayOf/docs/examples -->
+   </dir> <!-- /PHP/ArrayOf/docs -->
+   <dir name="tests">
+    <file name="__construct_array.phpt" role="test" />
+    <file name="__construct_ArrayObject.phpt" role="test" />
+    <file name="__construct_self.phpt" role="test" />
+    <file name="__construct_subclass.phpt" role="test" />
+    <file name="AcceptValue.phpt" role="test" />
+    <file name="ArrayAccess_Brackets.phpt" role="test" />
+    <file name="ArrayAccess_Methods.phpt" role="test" />
+    <file name="ArrayOfAnything.inc" role="test" />
+    <file name="ArrayOfInteger.inc" role="test" />
+    <file name="ArrayOfString.inc" role="test" />
+    <file name="Countable.phpt" role="test" />
+    <file name="IteratorAggregate.phpt" role="test" />
+    <file name="RejectValue.phpt" role="test" />
+   </dir> <!-- /PHP/ArrayOf/tests -->
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.6.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.1</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-05-06</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+- First release as PEAR package 
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-04-15</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+- Added PHPT regression tests
+- Fixed accepting SPL ArrayObjects
+- Updated license links
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-10-15</date>
+   <license uri="http://www.11abacus.com/license/NewBSD.php">New BSD License</license>
+   <notes>This is the first release for peer-review.
+   </notes>
+  </release>
+ </changelog>
+</package>
