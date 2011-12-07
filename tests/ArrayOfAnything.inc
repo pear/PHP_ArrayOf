@@ -17,7 +17,6 @@
 /**
  * Required package to test
  */
-error_reporting(E_ALL);
 require_once 'PHP/ArrayOf.php';
 
 /**
